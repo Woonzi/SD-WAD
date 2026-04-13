@@ -36,6 +36,7 @@ header {
   background-color: #0E21A0;
   width: 100%;
   padding: 2rem;
+  border-bottom: 2px solid white;
 }
 
 header .navbar {
@@ -119,4 +120,82 @@ section {
 section h1 {
   font-family: "Onest", "arial";
   font-size: 10rem;
+}
+
+/* Login Popup Styling */
+
+
+.login-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  background-color: transparent;
+  border: 3px solid white;
+  backdrop-filter: blur(10px);
+  width: 50rem;
+  height: 60rem;
+  padding: 3rem;
+  border-radius: 8px;
+  display: none;
+  z-index: 11;        
+}
+
+
+.login-popup h2 {
+  margin-bottom: 2rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-family: "Onest";
+  font-size: 5rem;
+  letter-spacing: -2px;
+}
+
+.login-popup form {
+  margin-top: 5rem;
+}
+
+.login-popup form label {
+  font-family: "Onest";
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.login-popup input {
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem 0;
+  font-size: 20px;
+}
+
+.login-popup .submit {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--color1);
+  font-size: 3rem;
+  border-style: none;
+  cursor: pointer;
+  margin-top: 2rem;
+  font-family: "Onest";
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.login-popup .submit:hover {
+  background-color: #3d1bad;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+}
+
+body.modal-open {
+  overflow: hidden;
 }

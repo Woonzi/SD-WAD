@@ -33,15 +33,12 @@
       
       <ul class="nav-menu">
         <li class="nav-items">
-          <a href="#" class="nav-link">LOGIN</a>
+          <a href="#" class="nav-link" id="loginBtn">LOGIN</a>
         </li>
         <li class="nav-items">
           <a id="sign-up-btn" href="#" class="nav-link">SIGN UP</a>
         </li>
-      </ul>
-
-      
-        
+      </ul>   
     </nav>
    </header>
 
@@ -50,6 +47,27 @@
       <div class="section-content">
         <h1>Step Into the CozMoz Experience</h1>
       </div>
+
     </section>
+
+   <!-- Login Popup Section -->
+    <!-- Login Popup -->
+     <div class="login-popup" id="loginPopup">
+      <div class="close-btn" id="closeBtn">&times;</div>
+      <h2>LOGIN</h2>
+      <hr>
+      <form>
+        <label>Username</label>
+        <input type="text" placeholder="Enter your username">
+
+        <label>Password</label>
+        <input type="text" placeholder="Enter your password">
+
+        <button type="submit" class="submit">Login</button>
+      </form>
+     </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>  
 </body>
 </html>
