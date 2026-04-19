@@ -32,9 +32,9 @@ html {
 
 section {
   min-height: 100vh;
+  background-image: url(/images/sign\ up\ bg.jpg);
 }
 
-/* Header Styling */
 header {
   position: fixed;
   background-color: #0E21A0;
@@ -76,26 +76,7 @@ header .navbar .nav-menu .nav-items .nav-link {
   font-weight: bold;
 }
 
-header .navbar .nav-middle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
 
-header .navbar .nav-middle input {
-  width: 35rem;
-  padding: 1rem 2rem;
-  font-size: 2rem;
-  border: none;
-  border-radius: 2rem;
-  color: black;
-}
-
-header .navbar .nav-middle i {
-  font-size: 2.8rem;
-  cursor: pointer;
-}
 
 
 header .navbar .nav-menu .nav-items #sign-up-btn {
@@ -109,44 +90,22 @@ header .navbar .nav-menu .nav-items #sign-up-btn:hover {
   background-color:var(--color2);
 }
 
-/* Hero Styling */
-#hero {
-  min-height: 100vh;
-  background-image: url(images/hero-section.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-section h1 {
-  font-family: "Onest", "arial";
-  font-size: 10rem;
-}
-
-/* Login Popup Styling */
-
-
-.login-popup {
+.signup-popup {
   position: fixed;
-  top: 50%;
-  left: 50%;
+  top: 55%;
+  left: 80%;
   transform: translate(-50%, -50%) scale(0.8);
   background-color: transparent;
   border: 3px solid white;
-  backdrop-filter: blur(10px);
-  width: 50rem;
-  height: 60rem;
+  width: 70rem;
+  height: 100rem;
   padding: 3rem;
   border-radius: 8px;
-  display: none;
-  z-index: 11;        
+  backdrop-filter: blur(10px);
 }
 
 
-.login-popup h2 {
+.signup-popup h2 {
   margin-bottom: 2rem;
   color: white;
   display: flex;
@@ -156,24 +115,24 @@ section h1 {
   letter-spacing: -2px;
 }
 
-.login-popup form {
+.signup-popup form {
   margin-top: 5rem;
 }
 
-.login-popup form label {
+.signup-popup form label {
   font-family: "Onest";
   font-size: 3rem;
   font-weight: bold;
 }
 
-.login-popup input {
-  width: 100%;
+.signup-popup input {
+  width: 80%;
   padding: 1rem;
   margin: 1rem 0;
   font-size: 20px;
 }
 
-.login-popup .submit {
+.signup-popup .submit {
   width: 100%;
   padding: 1rem;
   background-color: var(--color1);
@@ -186,7 +145,7 @@ section h1 {
   transition: 0.3s ease;
 }
 
-.login-popup .submit:hover {
+.signup-popup .submit:hover {
   background-color: #3d1bad;
 }
 
@@ -204,44 +163,31 @@ body.modal-open {
   overflow: hidden;
 }
 
-/* Second Section Styling */
-#second-section {
-  background: linear-gradient(to right, #15258a, #4D2FB2, #B153D7, #c45599);
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  max-width: 100%;
-  max-height: 80%;
-}
-
-.grid-content {
-  background: rgb(255, 85, 23);
-  height: 60rem;
-  width: 50rem;
-  border-radius: 5px;
-  margin: 10rem auto;
-  border: 7px solid rgb(21, 21, 80);
-}
-
-.content-container {
+.container-signup {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
 }
 
-
-.content-container .ticket-btn {
-  width: 24rem;
-  height: 6rem;
-  background: var(--color1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.content-container .ticket-btn .ticket {
+h1 {
+  font-size: 5rem;
+  width: 50%;
+  margin-top: 27%;
+  margin-left: 7%;
+  text-align: center;
   font-family: "Onest";
-  font-size: 2.5rem;
+  text-shadow: 1px 1px 0.3px gray;
+}
+
+.button {
+    display: block;
+    padding: 10px 20px;
+    background-color: var(--color1);
+    font-size: 3rem;
+    font-family: "onest";
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2rem;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
 }
