@@ -246,3 +246,8 @@ body.modal-open {
   font-family: "Onest";
   font-size: 2.5rem;
 }
+
+.event-img {
+  height: 100%;
+  width: 100%;
+}
